@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeView"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/background"
+    tools:context="kh.com.rookiedev.techtalk.MainActivity">
+
+
+   <ImageView
+       android:layout_width="90dp"
+       android:layout_height="90dp"
+       android:src="@mipmap/startuplogo"
+       android:id="@+id/appLogo"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="99dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/techTalk"
+        android:text="Tech-Talk"
+        android:gravity="center"
+        android:textSize="@dimen/subTitleFont"
+        android:layout_below="@id/appLogo"
+        android:textColor="@color/titleColor"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/techTalk"
+        android:text="ផ្តល់ព័ត៌មានពីបច្ចេកវិទ្យាថ្មីៗជុំវិញសកលលោក"
+        android:gravity="center"
+        android:id="@+id/missionary"
+        android:textSize="@dimen/fontSize"
+        android:textColor="@color/titleColor"
+
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ripple"
+        android:textColor="@color/buttonTextColor"
+        android:text="Log-In with Facebook"
+        android:textSize="14sp"
+        />
+
+
+</RelativeLayout>
